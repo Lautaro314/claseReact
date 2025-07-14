@@ -1,4 +1,3 @@
-import carrito from '../assets/carrito.png';
 
 export function CartWidget () {
     return (
