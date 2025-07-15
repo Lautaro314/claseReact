@@ -5,7 +5,7 @@ import {Item} from './components/Item.jsx';
 import {ItemDetailContainer} from './components/ItemDetailContainer.jsx';
 import {ItemList} from './components/ItemList.jsx';
 import {ItemDetail} from './components/ItemDetail.jsx';
-import {Routes, Route } from "react-router"
+import {Routes, Route, BrowserRouter } from "react-router-dom"
 import './App.css';
 
 
@@ -21,21 +21,13 @@ export function App() {
       <Navbar>
         <CartWidget/>
       </Navbar>
-      <ItemListContainer name= {nombreDelUsuario}>
-        <ItemList>
-          <Item/>
-        </ItemList>
-      </ItemListContainer>
-      <ItemDetailContainer>
-        <ItemDetail/>
-      </ItemDetailContainer>
 
-      <div>
         <Routes>
-          <Route path='/' element={<ItemListContainer/>}>Landidng products </Route>
-          <Route path='.category/:id' element={<ItemDetailContainer/>}>Categoria</Route>
+          <Route path='/' element= {<ItemListContainer/>}></Route>
+          <Route path='/category/:id' element={<ItemListContainer/>}></Route>
+          <Route path='/item/:id' element={<ItemDetailContainer/>}></Route>
         </Routes>
-      </div>
+
     </>  
 )
 }
