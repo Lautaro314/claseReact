@@ -1,29 +1,25 @@
+import { NavLink, useParams } from "react-router-dom"
 
-export function Item (products) {
+export function Item ({item}) {
 
-    
+const {id} = useParams();
     
     return (
         <>
-        <nav>
-            
-        </nav>
         <div className="renderProducto">
-                {products.map(producto => <div className="card" key={producto.id} style={{width: '18rem'}}>
-                        <img src="..." className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                            <h5 className="card-title">${producto.nombre}</h5>
-                            <p className="card-text">${producto.precio}</p>
-                            <a href="#" className="btn btn-primary">VER DETALLE</a>
-                        </div>
-                </div>)}
-        </div>
-    )
+                <div className="card" style={{width: '18rem'}}>
+                    <img src="..." className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                        <h5 className="card-title">${item.nombre}</h5>
+                        <p className="card-text">${item.precio}</p>
+                        <NavLink to = {`/item/${item.id}`} className="btn btn-primary">VER DETALLE</NavLink>
+                    </div>
+                </div>
+            </div>
+    
     </>
     
 )
-
-
 }
 
 export default Item

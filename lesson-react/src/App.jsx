@@ -5,7 +5,7 @@ import {Item} from './components/Item.jsx';
 import {ItemDetailContainer} from './components/ItemDetailContainer.jsx';
 import {ItemList} from './components/ItemList.jsx';
 import {ItemDetail} from './components/ItemDetail.jsx';
-import { Routes, Route } from "react-router"
+import {Routes, Route } from "react-router"
 import './App.css';
 
 
@@ -33,7 +33,7 @@ export function App() {
       <div>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}>Landidng products </Route>
-          <Route path='.category/:id'>Categoria</Route>
+          <Route path='.category/:id' element={<ItemDetailContainer/>}>Categoria</Route>
         </Routes>
       </div>
     </>  

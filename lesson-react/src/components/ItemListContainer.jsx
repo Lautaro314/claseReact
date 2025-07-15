@@ -31,7 +31,7 @@ useEffect(() => {
         <>
             <h2>TODO LOS PRODUCTOS</h2>
             <div className="renderProductos">
-            <ItemList itemProducto ={productos}/>
+            <ItemList products ={productos}/>
             </div>
 
         </>

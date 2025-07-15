@@ -11,7 +11,6 @@ export function Navbar () {
                 <img src= {logo} alt="Logo del shop" />
                 <h1>{nombreDelComercio}</h1>
                 <nav>
-                    <NavLink to= "/Landing">HOME</NavLink>
                     <NavLink to= "/Categorias">VER CATEGORIAS</NavLink>
                 </nav>
                 <img className='carrito' src= {carrito} alt="Carrito de compras" />
