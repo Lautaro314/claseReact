@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import {useEffect, useState} from "react"
 import {useParams } from "react-router-dom";
 import {ItemDetail} from './ItemDetail';
 
@@ -21,6 +21,8 @@ const [api , setApi] = useState(null);
         } 
     })
 
+    .catch(error => console.error("Error al cargar producto.json:", error));
+
 },[id]);
 
     return (
@@ -31,3 +33,5 @@ const [api , setApi] = useState(null);
 
 }
 export default ItemDetailContainer
+
+

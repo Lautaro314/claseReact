@@ -1,21 +1,34 @@
 import logo from '../assets/logo.png';
 import carrito from '../assets/carrito.png'
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
+import { useContext, useState } from 'react';
+import CartWidget from './CartWidget';
+
+
 
 export function Navbar () {
 
     const nombreDelComercio = "THE POWER";
 
-    return (<>
+    
+
+
+    return (
+        <>
             <header className="header">
                 <img src= {logo} alt="Logo del shop" />
-                <h1>{nombreDelComercio}</h1>
-                <nav>
-                    <NavLink to= "/Categorias">VER CATEGORIAS</NavLink>
-                </nav>
-                <img className='carrito' src= {carrito} alt="Carrito de compras" />
-            </header>
-        </>)
+                    <h1><NavLink className={"logo"} to='/'>{nombreDelComercio}</NavLink></h1>
+                    <nav>
+                        <NavLink to='/jeans'>JEANS</NavLink>
+                        <NavLink to='/Remeras'>REMERAS</NavLink>
+                        <NavLink to='/CamperasDeCuero'>CAMPERAS DE CUERO</NavLink>
+                        <NavLink to='/Cart' src={carrito} ><CartWidget/></NavLink>
+                    </nav>
+                <img src={carrito} className='carrito' alt="Carrito de compras"/>
+            </header>      
+        </>
+
+    )
 }
 
 

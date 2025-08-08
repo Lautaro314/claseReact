@@ -1,6 +1,5 @@
-import { useState } from "react"
-import {Item} from "./Item"
-
+import { useState } from 'react';
+import {Item} from './Item';
 
 export function ItemList ({products}){
 
@@ -13,7 +12,7 @@ export function ItemList ({products}){
     </div>
     <div>
         {products.map(producto =>(
-            <Item key ={producto.id} item={producto} />
+            <Item key ={producto.id} item={producto}/>
         ))}
     </div>
     </>

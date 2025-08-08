@@ -10,11 +10,14 @@
   background-color: antiquewhite;
 }
 
-h1 {
+.logo{
   font-size: 2.5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-top: 2%;
+  margin-top: 12%;
+  color: black;
 }
+
+
 
 li {
   list-style: none;
@@ -36,8 +39,7 @@ a{
   margin: 19px;
   font-size: 1.7rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-top: 2%;
-  
+  margin-top: 7%;
 }
 
 nav {
@@ -74,14 +76,27 @@ h3 {
 }
 
 .renderProducto {
-
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.detalleDelProducto {
+  align-items: center;
+}
 
+.categorias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 7%;
+}
+
+
+.productoCarrito {
+  color: black;
+}
 
 
 
