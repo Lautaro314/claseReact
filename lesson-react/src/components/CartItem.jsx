@@ -2,9 +2,6 @@ export function CartItem ({productosDisponibles}) {
 
 
     const handleClick = () => {
-        
-        
-    
     }
 
 
