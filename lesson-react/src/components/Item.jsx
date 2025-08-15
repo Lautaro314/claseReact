@@ -1,4 +1,3 @@
-//acceso a la plaforma de firebase en google
 import {app} from "../firebaseConfig";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 import { useContext, useEffect, useState } from "react";

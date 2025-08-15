@@ -32,6 +32,3 @@ export function Navbar () {
 
 
 export default Navbar
-//<img src={carrito} className='carrito' alt="Carrito de compras"/>
-//<NavLink to='/Cart' src={carrito}><CartWidget/></NavLink>
-//<img src={carrito} alt="CARRITO DE COMPRA"><NavLink to='/Cart'></NavLink></img>

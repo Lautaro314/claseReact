@@ -38,7 +38,6 @@ const handleSubmit = async (e) => {
         setOrderId(docRef.id);
         vaciarCarrito();
     } catch (error) {
-        //console.error('Error creando la orden: ', error);
     }
 };
 

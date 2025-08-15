@@ -18,7 +18,6 @@ useEffect(() => {
     fetch("/producto.json")
       .then((res) => res.json())
       .then((data) => setProductos(data))
-      //.catch((err) => console.error("❌ Error al cargar el JSON:", err));
   }, []);
 
 
