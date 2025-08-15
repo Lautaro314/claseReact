@@ -17,8 +17,8 @@ export function ItemDetail ({detalleDelProducto}) {
     
     return (
         <>  
-            <img src={detalleDelProducto.imagen } alt="imagen del producto" />
-            <h3>{detalleDelProducto.nombre}</h3>
+            <img src={detalleDelProducto.imagen} alt="imagen del producto" />
+            <h3>{detalleDelProducto.nombre }</h3>
             <p>{detalleDelProducto.precio}</p>
             <p>{detalleDelProducto.stock}{detalleDelProducto.stock > 1 ? "unidades" : "unidad"}</p>
             <h5>DETALLE DEL PRODUCTO</h5>
