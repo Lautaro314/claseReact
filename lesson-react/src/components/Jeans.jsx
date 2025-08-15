@@ -7,14 +7,13 @@ export function Jeans () {
 
     const [jeans , setJeans] = useState([]);
 
-    //hago la consulta de traer productos de tal categoria desde la base de datos
+
     
 
     useEffect  (() => {
         const db = getFirestore(app);
         const productCollection = collection(db , "productos");
 
-    //filtar solo los productos por categoria "jeans"
 
         const productosExtraidos = query(productCollection , where ("categoria" , "==" , "jeans"))
         
@@ -33,7 +32,7 @@ export function Jeans () {
         })
 
         .catch ((error) => {
-            console.error("❌ Error al traer productos:", error);
+
         })
 
     },[]);

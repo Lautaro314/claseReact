@@ -26,7 +26,6 @@ export function CamperasDeCuero () {
             setCampera(productosFiltrados);
         })
         .catch((error) => {
-            console.log("❌ Error al traer productos:", error);
             
         })
 

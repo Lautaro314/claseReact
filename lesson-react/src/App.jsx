@@ -27,6 +27,7 @@ export function App() {
       <CargarProductos/>
 
         <Routes>
+          <Route path='/Cart' element={<Cart/>}></Route>
           <Route path='/' element= {<ItemListContainer/>}></Route>
           <Route path='/category/:id' element={<ItemListContainer/>}></Route>
           <Route path='/item/:id' element={<ItemDetailContainer/>}></Route>
@@ -34,6 +35,7 @@ export function App() {
           <Route path='/Remeras' element={<Remeras/>}></Route>
           <Route path='/CamperasDeCuero' element={<CamperasDeCuero/>}></Route>
           <Route path='/cart'element ={<Cart/>}></Route>
+          <Route path='/categoria/:categoriaID' element={<Jeans/>}></Route>
         </Routes>
 
     </>  

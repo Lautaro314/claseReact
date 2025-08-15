@@ -13,9 +13,9 @@ export function Item ({item}) {
 
     return (
         <>
-             <div className="renderProducto">
+            <div className="renderProducto">
                 <div className="card" style={{width: '18rem'}}>
-                    <img src="..." className="card-img-top" alt="..."></img>
+                    <img src={item.imagen} className="card-img-top" alt="..."></img>
                     <div className="card-body">
                         <h5 className="card-title">${item.nombre}</h5>
                         <p className="card-text">${item.precio}</p>
@@ -34,35 +34,6 @@ export function Item ({item}) {
 
 export default Item
 
-
-/*
-<button onClick={agregarCarrito} className="btn btn-primary">Agregar al carrito</button>
-
-{carrito.map(producto => {
-                return(
-                <div key={producto.id} >
-                    <h2 className="productoCarrito">${producto.nombre}</h2>
-                    <p>${producto.precio}</p>
-                    <button onClick={ () => eliminarDelCarrito(producto.id)} className="btn btn-primary">ELIMINAR DEL CARRITO</button>
-                </div>
-                )
-            })}
-
-*/
-
-/*
- <div className="renderProducto">
-                <div className="card" style={{width: '18rem'}}>
-                    <img src="..." className="card-img-top" alt="..."></img>
-                    <div className="card-body">
-                        <h5 className="card-title">${item.nombre}</h5>
-                        <p className="card-text">${item.precio}</p>
-                        <p className="card-text" >Stock{item.stock}</p>
-                        <NavLink to = {`/item/${item.id}`} className="btn btn-primary">VER DETALLE</NavLink>
-                    </div>
-                </div>
-            </div>
-            */
 
 
 

@@ -4,55 +4,63 @@
     "nombre": "jean baggy",
     "precio": 15000,
     "stock": 10,
-    "categoria": "jeans"
+    "categoria": "jeans",
+    "imagen":"/assets/jeansBaggy.jpg"
     },
     {
     "id": 2,
     "nombre": "jean cargo",
     "precio": 13000,
     "stock":10,
-    "categoria": "jeans"
+    "categoria": "jeans",
+    "imagen": "/assets/jeansCargo.jpg"
     },
     {
     "id": 3,
     "nombre": "remera overside",
     "precio": 12000,
     "stock":10,
-    "categoria": "remeras"
+    "categoria": "remeras",
+    "imagen": "/assets/remerasOversides1.jpg"
     },
     {
     "id": 4,
     "nombre": "remera overside",
     "precio": 12000,
     "stock":10,
-    "categoria": "remeras"
+    "categoria": "remeras",
+    "imagen":"/assets/remerasOversides2.jpg"
     },
     {
     "id": 5,
     "nombre": "remera overside",
     "precio": 12500,
     "stock":10,
-    "categoria": "remeras"
+    "categoria": "remeras",
+    "imagen": "/assets/remerasOversides3.jpg"  
     },
     {
     "id": 6,
     "nombre": "campera de cuero",
     "precio": 21000,
     "stock":10,
-    "categoria": "camperas"
+    "categoria": "camperas",
+    "imagen":"/assets/camperasDeCuero.jpg"
     },
     {
     "id": 7,
     "nombre": "campera de cuero",
     "precio": 25000,
     "stock":10,
-    "categoria": "camperas"
+    "categoria": "camperas",
+    "imagen": "/assets/camperasDeCuero2.jpg"
     },
     {
     "id": 8,
     "nombre":"camperas de cuero",
     "precio": 26000,
     "stock":10,
-    "categoria":"camperas"
+    "categoria":"camperas",
+    "imagen": "/assets/camperasDeCuero3.jpg"
     }
 ]

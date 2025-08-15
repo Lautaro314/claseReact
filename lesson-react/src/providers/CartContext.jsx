@@ -25,7 +25,16 @@ export function CustomCartContext ({children}) {
 
     //Eliminar al carrito
     const removeFromCart = (id) => {
+        //setProducto(producto.filter(a => a.id !== producto.id))
         setProducto(producto.filter((p) => p.id !== id))
+    }
+
+    const vaciarCarrito = () => {
+        setProducto([])
+    }
+
+    const totalCarrito = () => {
+        return producto.reduce((acc , item) => acc + item.precio , 0)
     }
 
 
@@ -34,6 +43,8 @@ export function CustomCartContext ({children}) {
         cart:producto,
         addToCart,
         removeFromCart,
+        vaciarCarrito,
+        totalCarrito,
     }
 
 
@@ -43,7 +54,6 @@ export function CustomCartContext ({children}) {
     return  (
         <>
             <CartProvider value={valorContexto}>
-
                 {children}
             </CartProvider>
         </>

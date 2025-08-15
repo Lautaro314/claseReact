@@ -22,9 +22,8 @@ export function Navbar () {
                         <NavLink to='/jeans'>JEANS</NavLink>
                         <NavLink to='/Remeras'>REMERAS</NavLink>
                         <NavLink to='/CamperasDeCuero'>CAMPERAS DE CUERO</NavLink>
-                        <NavLink to='/Cart' src={carrito} ><CartWidget/></NavLink>
                     </nav>
-                <img src={carrito} className='carrito' alt="Carrito de compras"/>
+                    <NavLink className={'carritoDeCompra'} to='/Cart'><img src={carrito} className='carrito' alt="Carrito de compras"></img></NavLink>
             </header>      
         </>
 
@@ -33,3 +32,6 @@ export function Navbar () {
 
 
 export default Navbar
+//<img src={carrito} className='carrito' alt="Carrito de compras"/>
+//<NavLink to='/Cart' src={carrito}><CartWidget/></NavLink>
+//<img src={carrito} alt="CARRITO DE COMPRA"><NavLink to='/Cart'></NavLink></img>

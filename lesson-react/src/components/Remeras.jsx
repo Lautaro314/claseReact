@@ -12,7 +12,6 @@ export function Remeras () {
         const db = getFirestore(app);
         const productCollection = collection(db , "productos");
 
-    //filtrar las categorias remeras
 
     const productosExtraidos = query(productCollection , where("categoria" , "==" , "remeras"));
 
@@ -32,7 +31,7 @@ export function Remeras () {
     })
 
     .catch ((error) => {
-        console.error("❌ Error al traer productos:", error);
+        
     })
     
     },[])

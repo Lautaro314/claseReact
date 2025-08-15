@@ -75,13 +75,6 @@ h3 {
   border-radius: 62%;
 }
 
-.renderProducto {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .detalleDelProducto {
   align-items: center;
 }
@@ -96,6 +89,21 @@ h3 {
 
 .productoCarrito {
   color: black;
+}
+
+
+
+.carritoDeCompra{
+  margin-top: 0%;
+  width: 38%;
+  margin-right: -34%;
+  margin-top: 1%;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 
