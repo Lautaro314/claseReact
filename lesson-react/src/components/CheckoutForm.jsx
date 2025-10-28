@@ -43,8 +43,6 @@ const handleSubmit = async (e) => {
 
 
     if (orderId) {
-        console.log(orderId);
-        
         return (
             <div style={{textAlign: 'center'}} >
                 <h2>¡Gracias por tu compra!</h2>
